@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+div.container{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+
+
+}
+.border{
+    border: black 2px;
+    border-color: black;
+    
+    height: 100%;
+}

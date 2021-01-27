@@ -1,0 +1,31 @@
+<div class="item-detail">
+    <h2>This header is inside the item-detail.component</h2>
+    <p>The item-detail.component is chartreuse</p>
+    
+    <p>
+        Today's item: {{item}}
+        <!-- This is text interpolation -->
+    </p>
+
+<label>Add an item: <input #newItem></label>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
+</div>
+ 
+<!-- <p>
+    Today's item is a : {{item}}
+</p> -->
+
+
+
+
+<!-- <p>
+    {{day}} item is: {{item}}
+</p> -->
+
+      <!-- <p>{{infoObject[name]}}</p> -->
+
+<!-- 
+<label>Add an item: <input #newItem></label>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
+-->

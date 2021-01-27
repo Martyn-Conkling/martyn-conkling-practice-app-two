@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col border app-styles">
+      <h1>This header is in the app.component</h1>
+      <p>The app component background is cadetblue</p>
+
+      <ul>
+        <li *ngFor="let example of items">{{example}}</li>
+        <!-- *ngFor is a structural directive -->
+      </ul>
+
+      <app-item-detail 
+        (newItemEvent)="addItem($event)"
+        
+        [item]="currentItem"
+        
+      ></app-item-detail>
+
+  
+
+    </div> <!--End of col-->
+  </div> <!--End of row-->
+</div> <!--End of container-->
+
+
+
+
+
+
+
+
+
+
+<!-- <app-item-detail [item]="currentItem"></app-item-detail> -->
+
+<!-- <app-item-detail (newItemEvent)="addItem($event)" [item]="currentItem" [day]="currentDay"></app-item-detail>
+<app-item-detail (newItemEvent)="addItem($event)" [item]="yesterItem" [day]="yesterday"></app-item-detail>
+<app-item-detail (newItemEvent)="addItem($event)" [item]="tomorrowItem" [day]="tomorrow"></app-item-detail>
+
+
+<ul>
+  <li *ngFor="let element of items">{{element}}</li>
+</ul> -->
+
+<!-- 
+<input type="text" #item-input>
+<button (click)="changeCurrentItem()">Submit</button> -->
