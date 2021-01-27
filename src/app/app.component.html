@@ -11,6 +11,18 @@
 
       <app-item-detail 
         (newItemEvent)="addItem($event)"
+
+        [item]="currentItem"
+        
+      ></app-item-detail>
+      <app-item-detail 
+        (newItemEvent)="addItem($event)"
+        
+        [item]="currentItem"
+        
+      ></app-item-detail>
+      <app-item-detail 
+        (newItemEvent)="addItem($event)"
         
         [item]="currentItem"
         
